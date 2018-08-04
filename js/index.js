@@ -1,4 +1,6 @@
-
+var info = {
+  
+}
 
 
 new Vue({
