@@ -7,22 +7,22 @@
 //once the user clicks submit hide the form and show the div app
 //feel free to use animations
 
-var info = {
- fullName: document.querySelector('#f-name').value + ' ' +  document.querySelector('#l-name').value
-};
-
 document.querySelector('#form').addEventListener('submit', function(e){
   e.preventDefault();
 });
 
-new Vue({
-  el: '#app',
-  data: info
+document.querySelector('.gender').addEventListener('submit', function(e){
+  e.preventDefault();
 });
 
 document.querySelector('#submit').addEventListener('click', function() {
-
-
+  new Vue({
+    el: '#app',
+    data: {
+      fullName: document.querySelector('#f-name').value + ' ' +  document.querySelector('#l-name').value
+    }
+  });
 
   document.querySelector('#app').style.display="block"
 })
+
