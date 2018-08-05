@@ -23,9 +23,9 @@
 	<body>
 
     <h1>New Profile</h1>
-    <form novalidate>
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
+    <form id="form" novalidate>
+      <input id="f-name" type="text" placeholder="First Name">
+      <input id="l-name" type="text" placeholder="Last Name">
 
       <fieldset>Gender:</fieldset>
       <label>Male</label><input type="radio" value="male">
@@ -50,11 +50,14 @@
         <option value="Purple">Purple</option>
       </select>
 
-
+      <button id="submit">Submit</button>
     </form>
     
 
-		<div id="app" class="hidden"></div>
+		<div id="app" class="hidden">
+      <h1>{{fullName}}</h1>  
+      <h2>no</h2>
+    </div>
 
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

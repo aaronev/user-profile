@@ -8,16 +8,21 @@
 //feel free to use animations
 
 var info = {
-  
-}
+ fullName: document.querySelector('#f-name').value + ' ' +  document.querySelector('#l-name').value
+};
+
+document.querySelector('#form').addEventListener('submit', function(e){
+  e.preventDefault();
+});
 
 new Vue({
   el: '#app',
-  data: {
-    full_name: 'Aaron Villanueva',
-    pic: "https://yt3.ggpht.com/a-/ACSszfE8jr9X-8TOrsyUy2zRAX1F_6ZZz9knfCIv0w=s900-mo-c-c0xffffffff-rj-k-no",
-    Id: Math.floor(1000 + Math.random() * 9000),
-    date: mm + '/' + dd + '/' + yyyy,
-    time: myTimer()
-  }
+  data: info
+});
+
+document.querySelector('#submit').addEventListener('click', function() {
+
+
+
+  document.querySelector('#app').style.display="block"
 })
