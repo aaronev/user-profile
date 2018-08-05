@@ -8,9 +8,8 @@
 //feel free to use animations
 
 var info = {
-
+  
 }
-
 
 new Vue({
   el: '#app',
