@@ -23,23 +23,29 @@
 	<body>
 
     <h1>New Profile</h1>
-    <form id="form" novalidate>
-      <input id="f-name" type="text" placeholder="First Name">
-      <input id="l-name" type="text" placeholder="Last Name">
+    <form id="main-form" novalidate>
+      <input id="f-name" type="text" placeholder="First Name" required>
+      <input id="l-name" type="text" placeholder="Last Name" required>
 
-      <fieldset>Gender:</fieldset>
-      <label>Male</label><input class="gender" type="radio" value="male">
-      <label>Female</label><input class="gender" type="radio" value="female">
+      <form id="gender" required>
+        <fieldset>
+          <legend>Gender:</legend>
+          <input id="male" class="gender" type="radio" name="drone" value="male" checked/>
+          <label for="male">Male</label>
+          <input id="female" class="gender" type="radio" name="drone" value="female"/>
+          <label for="female">Female</label>
+        </fieldset>
+      </form>
 
       <div>
-        <input type="email" placeholder="Email Address">
+        <input type="email" placeholder="Email Address" required>
       </div>
 
       <div>
-        <input type="tel" placeholder="Phone Number">
+        <input type="tel" placeholder="Phone Number" required>
       </div>
 
-      <select>
+      <select id="favorite-color "required>
         <option value="Red">Select your favorite color</option>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
