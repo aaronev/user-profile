@@ -24,13 +24,13 @@
 
     <h1>New Profile</h1>
     <form id="main-form" novalidate>
-      <input id="f-name" type="text" placeholder="First Name" required>
-      <input id="l-name" type="text" placeholder="Last Name" required>
+      <input id="f-name" type="text" placeholder="First Name">
+      <input id="l-name" type="text" placeholder="Last Name">
 
-      <form id="gender" required>
+      <form id="gender">
         <fieldset>
           <legend>Gender:</legend>
-          <input id="male" class="gender" type="radio" name="drone" value="male" checked/>
+          <input id="male" class="gender" type="radio" name="drone" value="male" />
           <label for="male">Male</label>
           <input id="female" class="gender" type="radio" name="drone" value="female"/>
           <label for="female">Female</label>
@@ -38,14 +38,14 @@
       </form>
 
       <div>
-        <input type="email" placeholder="Email Address" required>
+        <input type="email" placeholder="Email Address">
       </div>
 
       <div>
-        <input type="tel" placeholder="Phone Number" required>
+        <input type="tel" placeholder="Phone Number">
       </div>
 
-      <select id="favorite-color "required>
+      <select id="favorite-color" >
         <option value="Red">Select your favorite color</option>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
@@ -62,6 +62,10 @@
 
 		<div id="app" class="hidden">
       <h1>{{fullName}}</h1>  
+      <h2>{{gender}}</h1>  
+      <h2>{{email}}</h1>  
+      <h2>{{phone}}</h1>  
+      <h2>{{color}}</h1>  
     </div>
 
     <!-- Vue.js -->
