@@ -8,10 +8,10 @@ document.querySelector('#submit').addEventListener('click', function() {
     el: '#app',
     data: {
       fullName: document.querySelector('#f-name').value + ' ' +  document.querySelector('#l-name').value,
-      gender: 'Male',
-      email: 'Email',
-      phone: 'Phone',
-      color: 'Red'
+      gender: document.querySelector('#gender').value,
+      email: document.querySelector('#email').value,
+      phone: document.querySelector('#phone').value,
+      color: document.querySelector('#color').value
     }
   });
 

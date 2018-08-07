@@ -22,30 +22,28 @@
 	</head>
 	<body>
 
-    <h1>New Profile</h1>
     <form id="main-form" novalidate>
+      <h1>New Profile</h1>
       <input id="f-name" type="text" placeholder="First Name">
       <input id="l-name" type="text" placeholder="Last Name">
 
-      <form id="gender">
-        <fieldset>
-          <legend>Gender:</legend>
-          <input id="male" class="gender" type="radio" name="drone" value="male" />
-          <label for="male">Male</label>
-          <input id="female" class="gender" type="radio" name="drone" value="female"/>
-          <label for="female">Female</label>
-        </fieldset>
-      </form>
+      <legend>Gender:</legend>
+      <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="both">Both</option>
+      </select>
+
 
       <div>
-        <input type="email" placeholder="Email Address">
+        <input id="email" type="email" placeholder="Email Address">
       </div>
 
       <div>
-        <input type="tel" placeholder="Phone Number">
+        <input id="phone" type="tel" placeholder="Phone Number">
       </div>
 
-      <select id="favorite-color" >
+      <select id="color" >
         <option value="Red">Select your favorite color</option>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
@@ -58,9 +56,8 @@
 
       <button id="submit">Submit</button>
     </form>
-    
 
-		<div id="app" class="hidden">
+  	<div id="app" class="hidden">
       <h1>{{fullName}}</h1>  
       <h2>{{gender}}</h1>  
       <h2>{{email}}</h1>  
